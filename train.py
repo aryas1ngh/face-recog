@@ -24,13 +24,12 @@ def getImagesAndLabels(data_dir):
             faceSamples.append(img_numpy[y:y+h,x:x+w])
             ids.append(id)
     return faceSamples,ids
-print ("\n [INFO] Training faces ...")
 
-
+print ("Training faces...")
 faces,ids = getImagesAndLabels(data_dir)
 recognizer.train(faces, np.array(ids))
 
 # save model
 recognizer.write(trainer_dir+'lbph_trainer.yml') 
 
-print("\n [INFO] {0} faces trained. Exiting Program".format(len(np.unique(ids))))
+print("{0} faces trained.".format(len(np.unique(ids))))
