@@ -2,7 +2,10 @@
 A simple face recognition model using OpenCV and Haar Cascades, using Local Binary Pattern Histogram (LBPH) algorithm.
 
 ### Clone the repo
-- Execute in terminal : ```git clone https://github.com/aryas1ngh/face-recog.git```
+- Execute in terminal :
+```bash
+git clone https://github.com/aryas1ngh/face-recog.git
+```
 
 ### Files and directories
 - ```cascades/```: contains the Haar cascades for face recogintion. Here, only ```haarcascade_frontalface_default.xml``` is included, but you can include more using this [Haar Cascade repository](https://github.com/opencv/opencv/tree/master/data/haarcascades).
