@@ -16,4 +16,8 @@ git clone https://github.com/aryas1ngh/face-recog.git
 - ```main.py```: Live face recognition module with confidence percentage displayed.
 - ```clean.bat```: Utility Windows batchfile used to empty the ```data/``` directory for training in newer settings.
 
+### Workflow
+- Collect data (pictures of users) by running ```collect.py``` on a webcam-enabled device.
+- Train the facial image data with frontal-face Haar Cascade using ```train.py```.
+- Run the ```main.py``` file for real-time face recognition with confidence percentage score.
   
